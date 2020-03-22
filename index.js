@@ -19,7 +19,7 @@ function deleteFromObjectByKey(object, key) {
   var newObject = Object.assign({}, object);
   delete newObject[key];
   
-  return newObject(recipes, 'Bread')
+  return newObject
 }
 
-deleteFromObjectByKey()
+deleteFromObjectByKey(recipes, 'Bread')
