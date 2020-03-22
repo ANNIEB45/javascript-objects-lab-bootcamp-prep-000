@@ -6,3 +6,11 @@ function updateObjectWithKeyAndValue(object, key, value) {
 }
 
 updateObjectWithKeyAndValue(recipes, 'Cupcakes', '4 boxes')
+
+function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
+  object[key] = value
+  
+  return object
+}
+
+destructivelyUpdateObjectWithKeyAndValue(recipes, 'Bread', '7 Loafs')
