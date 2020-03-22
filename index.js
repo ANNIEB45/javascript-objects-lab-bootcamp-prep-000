@@ -23,3 +23,11 @@ function deleteFromObjectByKey(object, key) {
 }
 
 deleteFromObjectByKey(recipes, 'Bread')
+
+function destructivelyDeleteFromObjectByKey(object, key) {
+  delete object[key]
+  
+  return object
+}
+
+destructivelyDeleteFromObjectByKey(recipes, 'Cupcakes')
